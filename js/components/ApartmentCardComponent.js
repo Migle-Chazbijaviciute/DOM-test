@@ -39,7 +39,7 @@ class ApartmentCardComponent {
       
       <ul class ="list-group">
       <li class ="list-group-item"><b>Room Count: </b>${roomCount}</li>
-      <li class ="list-group-item"><b>Squares: </b>${squares}</li>
+      <li class ="list-group-item"><b>Squares: </b>${squares}m²</li>
       <li class ="list-group-item"><b>Price: </b>${this.convert(amount, currency)} €</li>
       </ul>
       
@@ -50,6 +50,8 @@ class ApartmentCardComponent {
       <li class ="list-group-item"><b>Phone: </b>${phone}</li>
     </div>
     `
+    const deleteBtn = element.querySelector('.btn');
+    deleteBtn.addEventListener('click', () => this.props.deleteCard(id));
 
     return element;
   }

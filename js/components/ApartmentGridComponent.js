@@ -20,6 +20,22 @@ class ApartmentGridComponent {
     );
   }
 
+  deleteApartment = (id) => {
+    this.render();
+    API.deleteApartment(() =>
+      API.fetchApartments(
+        (apartments) => {
+          this.state.apartments = apartments;
+          this.state.loading = false;
+          this.render();
+        },
+        (err) => console.log(err)
+      ),
+      (err) => console.log(err),
+      id
+    )
+  }
+
   init = () => {
     this.fetchApartments();
     this.htmlElement = document.createElement('div');
@@ -35,7 +51,8 @@ class ApartmentGridComponent {
       this.htmlElement.innerHTML = '';
       this.state.apartments.forEach(apartments => {
         const newApartment = new ApartmentCardComponent({
-          data: apartments
+          data: apartments,
+          deleteCard: this.deleteApartment
         })
         this.htmlElement.appendChild(newApartment.htmlElement);
       })
