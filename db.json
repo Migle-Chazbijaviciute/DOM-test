@@ -1,0 +1,136 @@
+{
+  "apartment": [
+    {
+      "id": "1",
+      "type": "house",
+      "owner": {
+        "fullname": "Tomas Tominis",
+        "email": "tomas@gmail.com",
+        "phone": "865740393"
+      },
+      "roomCount": 5,
+      "squares": 120,
+      "address": {
+        "city": "Vilnius",
+        "country": "Lietuva",
+        "street": "Gedimino pr.",
+        "number": "24"
+      },
+      "price": {
+        "amount": 500000,
+        "currency": "€"
+      },
+      "imgSrc": "https://www.ashtonmitchell.com/wp-content/uploads/160908_ONEHUNGA_V07_VIC_ENTRANCE_FINAL_AMA-1250-400x400.jpg"
+    },
+    {
+      "id": "2",
+      "type": "flat",
+      "owner": {
+        "fullname": "Noras Pomidoras",
+        "email": "pompom@gmail.com",
+        "phone": "86234234"
+      },
+      "roomCount": 2,
+      "squares": 60,
+      "address": {
+        "city": "Kopenhaga",
+        "country": "Danija",
+        "street": "Danijos g.",
+        "number": "15"
+      },
+      "price": {
+        "amount": 90500,
+        "currency": "$"
+      },
+      "imgSrc": "https://vilabaldininkas.lt/wp-content/uploads/2016/02/1-400x400.jpg"
+    },
+    {
+      "id": "3",
+      "type": "cottage",
+      "owner": {
+        "fullname": "Jura Banguota",
+        "email": "banguojastop@gmail.com",
+        "phone": "8612312323"
+      },
+      "roomCount": 4,
+      "squares": 90,
+      "address": {
+        "city": "Klaipeda",
+        "country": "Lietuva",
+        "street": "Uosto g.",
+        "number": "12"
+      },
+      "price": {
+        "amount": 125000,
+        "currency": "$"
+      },
+      "imgSrc": "https://cdn.shortpixel.ai/spai/w_1003+q_lossless+ret_img+to_auto/https://helloavenir.com/wp-content/uploads/2020/06/DSC05592-400x400.jpg"
+    },
+    {
+      "id": "4",
+      "type": "house",
+      "owner": {
+        "fullname": "Salota Sveika",
+        "email": "ganaryt@gmail.com",
+        "phone": "864545454"
+      },
+      "roomCount": 5,
+      "squares": 140,
+      "address": {
+        "city": "Kaunas",
+        "country": "Lietuva",
+        "street": "Normaliu g.",
+        "number": "13"
+      },
+      "price": {
+        "amount": 125000,
+        "currency": "€"
+      },
+      "imgSrc": "http://www.apartmani-hrgovcic.com/wp-content/uploads/2019/03/apartments-hrgovcic-2-400x400.jpg"
+    },
+    {
+      "id": "5",
+      "type": "flat",
+      "owner": {
+        "fullname": "Ridikas Raudonas",
+        "email": "ridikutis@gmail.com",
+        "phone": "866746384"
+      },
+      "roomCount": 1,
+      "squares": 30,
+      "address": {
+        "city": "Kaunas",
+        "country": "Lietuva",
+        "street": "Belekokia g.",
+        "number": "1"
+      },
+      "price": {
+        "amount": 84000,
+        "currency": "€"
+      },
+      "imgSrc": "https://sevid-apartments-mikulic.com/wp-content/uploads/2016/02/ap-4-400x400.jpg"
+    },
+    {
+      "id": "6",
+      "type": "cottage",
+      "owner": {
+        "fullname": "Kiausinis Virtas",
+        "email": "tryniukas@gmail.com",
+        "phone": "862367236"
+      },
+      "roomCount": 4,
+      "squares": 80,
+      "address": {
+        "city": "Vilnius",
+        "country": "Lietuva",
+        "street": "Keptuves g.",
+        "number": "6"
+      },
+      "price": {
+        "amount": 95000,
+        "currency": "$"
+      },
+      "imgSrc": "https://www.lini.lt/wp-content/uploads/2020/04/Raugyklos-9_2-1-400x400.jpg"
+    }
+  ]
+}
