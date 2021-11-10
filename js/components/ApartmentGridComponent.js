@@ -8,12 +8,30 @@ class ApartmentGridComponent {
     this.init();
   }
 
+  fetchApartments = () => {
+    this.state.loading = true;
+    API.fetchApartments(
+      (apartments) => {
+        this.state.apartments = apartments;
+        this.state.loading = false;
+        this.render();
+      },
+      (err) => console.log(err)
+    );
+  }
+
   init = () => {
+    this.fetchApartments();
     this.htmlElement = document.createElement('div');
     this.render();
   }
 
   render = () => {
-    this.htmlElement.innerHTML = 'Ar rodo mane ekrane?';
+    const { loading } = this.state;
+    if (loading) {
+      this.htmlElement.innerHTML = 'siunčiama...'
+    } else {
+      this.htmlElement.innerHTML = 'parsiųsta!'
+    }
   }
 }
